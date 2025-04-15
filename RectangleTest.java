@@ -8,7 +8,7 @@ public class RectangleTest {
         System.out.println("box1: " + box1);
 
         Rectangle box2 = new Rectangle(100, 50);
-        System.out.println("box1: " + box2);
+        System.out.println("box1: " + box2); 
 
 
         box1.move(20, 20); // or box1.setLocation(20, 20);
@@ -21,6 +21,12 @@ public class RectangleTest {
         int width = input.nextInt();
         System.out.print("Enter height: ");
         int height = input.nextInt();
+
+        box1.intersection(box2);
+        System.out.println("Intersection of box1 and box2: " + box1.intersection(box2));
+        System.out.println("Area of box1: " + box1.getWidth() * box1.getHeight());
+        System.out.println("Area of box2: " + box2.getWidth() * box2.getHeight());
+        System.out.println("Area of intersection: " + box1.intersection(box2).getWidth() * box1.intersection(box2).getHeight());
 
     }
 
