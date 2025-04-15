@@ -6,6 +6,7 @@
 
 import java.awt.*;
 
+
 /**
  * This class describes a circle with a given radius and color.
  *
@@ -19,14 +20,13 @@ public class Circle {
     private double area;
 
 
-
     /**
      * Default constructor
      * Sets the radius to 1.0 and color to red.
      */
     public Circle() {
         radius = 1.0;
-        this.color = new Color("red");
+        this.color = new Color(101);
     }
 
     /**
